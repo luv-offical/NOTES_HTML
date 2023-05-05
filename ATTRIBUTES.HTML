@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute tags</title>
+    <!-- Creat a fav-icon -->
+    <link rel="icon" type="image/x-icon" href="/Asse/work.jpg" />
+  </head>
+  <!-- creat a brackground image-->
+  <body background="./Asse/milky-way-starry-sky-night-sky-star-956999.jpeg">
+    <a href="https://www.youtube.com/watch?v=0nVXsjF34BA">
+      To Watch Click here</a
+    >
+    <!-- use image map to creat a  iamge link-->
+    <img src="/Asse/cat.jpg.jpg" alt="cats pics" width="50%" />
+
+    <img src="/Asse/work.jpg" alt="work" usemap="#work" />
+    <map name="work">
+      <area
+        shape="rect"
+        coords="260, 233, 767, 583"
+        alt="laptop"
+        href="https://www.apple.com/in/mac-pro/specs/"
+      />
+      <area
+        shape="circle"
+        coords="909, 258,89"
+        alt="CUP"
+        href="https://en.wikipedia.org/wiki/Cup"
+      />
+      <area
+        shape="poly"
+        coords="690,639 690,791 910,791 909,641"
+        alt="book"
+        href="https://www.amazon.in/s?k=compact+20000mah+power+bank&adgrpid=61401233279&ext_vrnc=hi&hvadid=398059829986&hvdev=c&hvlocphy=1007749&hvnetw=g&hvqmt=e&hvrand=2074912990732674725&hvtargid=kwd-712596278081&hydadcr=24535_1971383&tag=googinhydr1-21&ref=pd_sl_3wjcn12siy_e"
+      />
+      <area
+        shape="rect"
+        coords="32,500,211,797"
+        alt="best-book"
+        href="https://leverageedu.com/blog/best-novels-for-students/"
+      />
+      <area
+        shape="rect"
+        coords="261,648,654,790"
+        alt="keybood"
+        href="https://www.amazon.in/s?k=keyboard+and+mouse+for+office&adgrpid=61012706619&ext_vrnc=hi&hvadid=590584033143&hvdev=c&hvlocphy=1007749&hvnetw=g&hvqmt=b&hvrand=460751614351657052&hvtargid=kwd-305607202263&hydadcr=14307_2262222&tag=googinhydr1-21&ref=pd_sl_3ougnym8wq_b"
+      />
+      <area
+        shape="rect"
+        coords="833,388,908,574"
+        alt="phone"
+        href="https://www.apple.com/in/iphone/"
+      />
+    </map>
+    <!--to creat allow dispaly picture for different device or screen size-->
+    <picture>
+      <source media="(min-width: 550px)" srcset="bmw.jpg">
+      <source media="(min-width: 440px)" srcset="sky.jpg">
+      <img src="airoplan.jpg">
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block&inline</title>
+  </head>
+  <body>
+    <!--The address define the contact information for the author  usally  render italic and  browser with  add new line before addres-->
+    <address>
+      Written by <a href="https://www.w3schools.com">Md shahid</a><br />
+      visit us : <br />
+      Near by Danapur <br />
+      Bihar
+    </address>
+    <article>
+      <!--The aritcle specifies independent self contained content-->
+      <h2>Google Chrome</h2>
+      <p>
+        Google Chrome is a web browser developed by Google, released in 2008.
+        Chrome is the world's most popular web browser today
+      </p>
+      <h2>Mozilla Firefox</h2>
+      <p>
+        Mozilla Firefox is an open-source web browser developed by Mozilla.
+        Firefox has been the second most popular web browser since January, 2018
+      </p>
+    </article>
+    <aside>
+      <!--The  aaside tag content is often placed as a sidebar in  a document-->
+      <h2>Epcot Center</h2>
+      <p>
+        Epcot is a theme park at Walt Disney World Resort featuring exciting
+        attractions, international pavilions, award-winning fireworks and
+        seasonal special events.
+      </p>
+    </aside>
+    <blockquote cite="www.worldwildlife.org">
+      <!--specifies a section thatis quoted from another source-->
+
+      For 50 years, WWF has been protecting the future of nature. The world's
+      leading conservation organization, WWF works in 100 countries and is
+      supported by 1.2 million members in the United States and close to 5
+      million globally.
+    </blockquote>
+    <dl>
+      <!--the dd tag is used to describe a teram/name in description-->
+
+      <dt>Coffee</dt>
+      <dd>Black hot dink</dd>
+      <!--Description terms/ names-->
+      <dt>milk</dt>
+      <!--Description list-->
+      <dd>White cold drink</dd>
+      <!--dd  tag is used to conjuction with dl inside dd you can put paragraph , line, break, img, links etc-->
+    </dl>
+    <form>
+      <fieldset>
+        <legend style="align-items: center">Personalia Details</legend>
+        <label for="fanme">First Name</label><br />
+        <input type="text" id="fname" name="fanme" style="width: 100%" /><br />
+        <label for="lname">Last Name </label><br />
+        <input type="text" id="lname" name="lname" style="width: 100%" /><br />
+        <label for="email"> Email</label><br />
+        <input type="email" id="email" name="email" style="width: 100%" /><br />
+        <label for="Address">Address</label><br />
+        <input
+          type="Address"
+          id="Address"
+          name="Address"
+          style="width: 100%"
+        /><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <figure>
+      <img src="/bmw.jpg" alt="BMW cars" style="width: 50%" />
+      <figcaption>
+        Bavarian Motor Works (Bayerische Motoren Worke in German) or BMW is a
+        German luxury automobile manufacturer that was founded back in 1916.
+        Headquartered in Munich, the brand made its debut in India in 2006. The
+        Indian arm of the company has its headquarters in Gurugram while their
+        factory is located in Chennai.
+      </figcaption>
+    </figure>
+    <footer>
+      <a href="luvmr@gmail.com"></a>
+    </footer>
+    <section>
+      <h2>Section</h2>
+      <p>This is a section tag defines a section in a document</p>
+    </section>
+    <!--tfoot tag used to group footer content in an html table  tfoot element in  conjuction with thead and tbody 
+    NOTE:- THE tfoot tag must have one more tr tags inside -->
+    <table>
+      <thead>
+        <tr>
+          YEAR
+        </tr>
+        <tr>
+          MONTH
+        </tr>
+        <tr>
+          SAVING
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>2023</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>feb</td>
+          <td>2021</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>march</td>
+          <td>2020</td>
+          <td>300</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>sum</td>
+          <td>600</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!--The video tag used to embed  video content in a document such as movie clip or other video streams
+    source mtags with differnt video source the browser will choose the it supports -->
+    <video width="37%" controls poster="/Asse/thumnail.jpg">
+      <source src="/Asse/video.mp4.mp4" type="video/mp4" />
+    </video>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YxWlaYCA8MU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe><BR>
+    <!--INLLINE ELEMENTS-->
+    <a href="https://www.w3schools.com/"
+      ><span style="color: blue; font-weight: bold"
+        >TO KONW HTML VISIT THIS WEBSITE</span
+      ></a
+    >
+    <!--THE<a> TAG DEFINS A HYPERLINK WHICH IS USED TO LINK FROM ONE PAGE TO ANOTHER-->
+    <br /><!-- this tag defines an abbreviation or an nacronym -->
+    <abbr title="world health organization">WHO</abbr>
+    <br /><!--THIS TAG SPECIFIES BOLD TEXT WITHOUT ANY EXTRA IMPORTANCE-->
+    <b>THIS IS A BOLD TAG</b>
+    <br />
+    <bdo dir="rtl">this text will go right to left</bdo>
+    <br /><!--THE BUTTON TAG DEFINE A CLICKABLE BUTTON-->
+    <button>Click here</button>
+    <br /><!--THE city TAG DEFINES THE TITLE OF A CREATIVE WORK -->
+    <p>THIS IS INSPIR BASED <CITY>STORY</CITY></p>
+    <br /><!--THS <em> TAG USED TO DEFINE EMPHASIZED TEXT THE CONTENT INSIDE ITALIC-->
+    <p>THIS IS A <em>EMPHASIZED </em> TAG</p>
+    <br/><!--THE <object> TAG DEFINES A CONTAINER FOR EXTERNAL RESOURCE-->
+      <object data="/Asse/video.mp4.mp4" width="30%" height="30%"></object>
+      <br><!--THE <output> TAG USED TO REPRESENT THE RESUKT OF A CALCULATION-->
+        <h1>THIS IS OUTPUT VALUE IS USE TO CALCULATE ETC</h1>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" value="50" id="a">+
+          <input type="range" value="25" id="b">=
+          <output name="x" for="a b">
+          </output>
+        </form>
+        <BR>
+          <FORM><!--THE <textarea> TAG DEFINES A MULTI-LINE TEXT INPUT CONTROL-->
+            <textarea rows="15" cols="35" placeholder="Writte your store...."></textarea><br>
+          
+          </FORM>
+          <BR><!--THE <time< TAG DEFINES A SPECIFI TIME  THIS ELEMENT TRANSLATE THE TIME INTO A MACHINE READABLE FORMAT-->
+            <P>I WILL FINSIED MY WORK <TIME datetime="15:00">15:00</TIME></P>
+            <P> I WILL GO TO THE MOVIE <TIME datetime="MARCH"><span style="color: red;">MARCH</span></TIME></P>
+            <P>I TAKE A TEST <time datetime="PT1H:30M">1H:30M </time></P>
+
+
+
+
+  </body>
+</html>
