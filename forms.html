@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+
+  <body>
+    <!--THE HTML <form> ELEMENTS IS USED TO CREATE AN HTML FORM FOR USER INPUT-->
+    <!--TYPE                                                 DESCRIPTION-->
+    <!--input type="text">                       	Displays a single-line text input field
+<input type="radio">	                                Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	                                Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">                                	Displays a submit button (for submitting the form)
+<input type="button">                                   Display a clickable button-->
+    <form>
+      <label for="fname">First name </label><br />
+      <input type="text" id="fname" /><br />
+      <label for="lname">Last name</label><br />
+      <input type="text" id="lname" /><br />
+      <input type="date" id="birthday" name="birthday"> <br><!-- that should contain a date-->
+      <input type="date" id="datemax" name="datemax" max="2002-02-01"><br><!--ENTER DATE AFTER 2002-->
+      <input type="date" id="datemin" name="datemin" min="2006-02-01"><br><!--Enter date before 2006-->
+      <label for="password" id="pwd" name="pwd">password</label><br>
+      <input type="password" id="pwd"><br> <!--DEFINE A PASSWORD FIELD-->
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset"><!--RESET ALL FROM  VALUES THEIR DEFAULT VALUES-->
+      <input type="color"  id="favcolor" name="favcolor" value="#ff0
+      000"> <!--used  for input fields that should contain a color-->
+      <h1>Radio Buttons</h1>
+      <input type="radio" id="math" value="math" />
+      <label for="math">Math</label>
+      <input type="radio" id="math" value="math" />
+      <label for="math">HTML</label>
+      <input type="radio" id="math" value="math" />
+      <label for="math">Css</label><br />
+      <input type="submit" value="submit" />
+      <br />
+      <h1>checkbox</h1>
+      <input type="checkbox" id="java" value="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" id="java" value="java" />
+      <label for="java">React</label>
+      <input type="checkbox" id="java" value="java" />
+      <label for="java">CSS</label><br />
+      <input type="submit" value="submit" /><br /><br /><br />
+      <b>Select any brand would you like</b>
+      <label for="car" id="car"></label><br />
+      <select id="car" name="car">
+        <!--THE <select> DEFINE A DROP-DOWN LIST-->
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="volvo">volvo</option>
+        <option value="Mustang">Mustang</option>
+        <option value="RR">RR</option>
+        <br /></select
+      ><br />
+      <input type="submit" value="submit" />
+      <br />
+      <label for="car" id="car"></label><br />
+      <select id="car" name="car" size="3">
+        <!-- use size attribute to specify the number value visible -->
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="volvo">volvo</option>
+        <option value="Mustang">Mustang</option>
+        <option value="RR">RR</option>
+        <br /></select
+      ><br />
+      <button
+        type="button"
+        onclick="alert('thanku for choose your favorite brand ')"
+      >
+        <!--THE BUTTON ELEMENT DEFINE A CLICKABLE BUTTON-->
+        submit</button
+      ><br /><br />
+    </form>
+    <form>
+      <input list="browser" name="browser" />
+      <!--NOTES SELECT NAME ELEMENTS-->
+      <datalist id="browser">
+        <!-- THE DATALIST ELEMENT SPECIFIES A LIST OF PRE- DEFINED OPTION FOR AN INPUT ELEMENT-->
+        <option value="Internet Explorer"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Fire fox"></option>
+        <option value="Safari"></option></datalist
+
+      ><br /><br><button
+      type="button"
+      onclick="confirm('thanku choosing your favorite brands')"
+    >
+      Submit
+    </button><br>
+      <label for="myfile"><b>Pelese Select a file</b></label><br>
+      <input type="file" id="myfile" name="myfile"><br> 
+      <button type="button" onclick="alert('Submit your file Suscefully')">Submit</button>
+      <!--ALLOWS THE USER A MONTH AND YEAR--><br><br>
+      <label for="bday-month" id="bday-month">bday-month</label>
+      <input type="month" id="bday-month"><br>
+      <label for="quantity">Quantity</label> <br><!--you can also set restriction on what number are accepted-->
+      <input type="number" id="quantity" name="quantity" min="-1" max="10">
+      <h1>RANGE FIELD</h1><!--THE INPUT TYPE RANGE CAN BE DISPLAYED AS SLIDER CONTROL-->
+      <label for="vol">Volume</label><br>
+      <input type="range" id="vol" name="vol" min="0" max="100">
+      <h2>SEARCH</h2><!--USED FOR SEARCH FIELDS ITS BEHAVES LIKE A REGULAR TEXT FIELD-->
+      <label for="search">Search</label><br>
+      <input type="search" id="search" name="search"><br>
+      <label for="appr" id="appt">Select your time </label><!--ALLOW THE USER TO SELECT A TIME-->
+      <input type="time" id="appt" name="appt"><br>
+      <label for="week">Select Weekend</label><!--ALLOW THE USER SELECT A WEEK AND YEAR-->
+      <input type="week" id="week"><br>
+    </form>
+  </body>
+</html>
